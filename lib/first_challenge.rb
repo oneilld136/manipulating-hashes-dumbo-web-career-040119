@@ -2,7 +2,7 @@ def first_challenge
   contacts = {
     "Jon Snow" => {
       name: "Jon",
-      email: "jon_snow@thewall.we", 
+      email: "jon_snow@thewall.we",
       favorite_icecream_flavors: ["chocolate", "vanilla", "mint chip"],
       knows: nil
     },
@@ -16,8 +16,8 @@ def first_challenge
   #your code here
   contacts.each do |person, data|
     #at this level, "person" is Jon Snow or Freddy and "data" is a hash of key/value pairs
-    #to iterate over the "data" hash, we can use the following line: 
-   
+    #to iterate over the "data" hash, we can use the following line:
+
     data.each do |attribute, value|
       puts "#{attribute}: #{value}"
     end
@@ -26,4 +26,3 @@ def first_challenge
   #remember to return your newly altered contacts hash!
   contacts
 end
-
